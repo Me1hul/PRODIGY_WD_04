@@ -78,7 +78,7 @@ nav ul li a:hover {
 }
 
 .intro {
-    font-size: 3vw;
+    font-size: 5vw;
     font-weight: 700;
 }
 
@@ -131,24 +131,6 @@ nav ul li a:hover {
 
 
 
-#skills {
-    border-radius: 2rem;
-    text-align: center;
-
-
-}
-
-.skills {
-    display: flex;
-    background-color: #E2F8FF;
-    border-radius: 2rem;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 2rem;
-    margin: 0 3vw;
-    padding: auto;
-    /* list-style: none; */
-}
 
 
 .html {
@@ -175,11 +157,11 @@ nav ul li a:hover {
 .contain p,
 h3 {
     margin-left: 20px;
-
+    
 }
 
 .contain h4 {
-
+    
     font-size: large;
     /* align-items: center; */
     text-align: center;
@@ -188,9 +170,14 @@ h3 {
 
 nav ul {
     list-style-type: none;
-
+    
 }
 
+.Resume {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: 200;
+}
 
 .contactme {
     text-align: center;
@@ -224,7 +211,7 @@ section {
     padding: auto;
     display: flex;
     flex-direction: column;
-
+    
 }
 
 .project1 {
@@ -236,15 +223,23 @@ section {
 
 .project1 ul li {
     list-style: none;
-
+    
 }
 
 
 
 .project3 {
     display: flexbox;
-
-
+    
+    .project-description {
+        max-width: 55vw;
+        margin: 20px auto;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
 }
 
 .website-link {
@@ -255,30 +250,25 @@ section {
 }
 
 
-.Resume {
-    color: white;
-    font-family: Arial, sans-serif;
-    font-weight: 200;
-}
 
 .assignment {
-
-    width: 44vw;
+    
+    width: 48vw;
     transition: width 0.3s ease-in-out;
     padding: 0 4px;
 }
 
 .assignment,
 video {
-
-    border-radius: 32px;
+    
+    border-radius: 14px;
 }
 
 /* @media (min-width: 1024px) { 
     
 .assignment video {
-        width: 60vw; 
-    }
+    width: 60vw; 
+}
 } */
 
 button {
@@ -289,7 +279,7 @@ button {
     font-family: inherit;
     color: white;
     padding: 0.5em 1em;
-    margin: auto 3px;
+    margin: 2px 3px;
     outline: none;
     border: none;
     background-color: #63c0ef;
@@ -359,24 +349,16 @@ a {
         background-color: #E2F8FF;
         border-radius: 5px;
     }
-
+    
     .hamburger-menu {
         display: none;
     }
-
+    
 }
 
 
 
 
-.project-description {
-    max-width: 55vw;
-    margin: 20px auto;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
 h2 {
     color: #333;
@@ -386,7 +368,7 @@ h2 {
 p {
     font-size: 16px;
     line-height: 1.6;
-    color: #555;
+    color: #0f0f0f;
 }
 
 ul {
@@ -403,33 +385,51 @@ ul li {
 a {
     display: inline-block;
     transition: transform 0.3s ease;
-
+    
     .social-images {
         transition: filter 0.3s ease, transform 0.3s ease;
-
+        
     }
-
+    
     .social-images:hover {
         filter: brightness(0) invert(1);
-
+        
         transform: scale(1.2);
-
+        
     }
 }
 
+#skills {
+    border-radius: 2rem;
+    text-align: center;
+
+
+}
+
+.skills {
+    display: flex;
+    background-color: #E2F8FF;
+    border-radius: 2rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 2rem;
+    margin: 0 3vw;
+    padding: auto;
+    /* list-style: none; */
+}
 
 .logos {
     background-color: rgb(234, 234, 234);
     border-radius: 30px;
     padding: 30px 6px;
     margin: 0 3vw;
-
+    
     @media (max-width:1440px) {
         border-radius: 0px;
     }
-
+    
     .marquee {
-
+        
         width: 100vw;
         max-width: 100%;
         height: 128px;
@@ -437,8 +437,8 @@ a {
         position: relative;
         flex-shrink: 0;
         user-select: none;
-
-
+        
+        
         .track {
             display: flex;
             position: absolute;
@@ -447,7 +447,7 @@ a {
             animation: marquee 40s linear infinite;
             gap: 10px;
             justify-content: space-around;
-
+            
         }
     }
 }
@@ -456,7 +456,7 @@ a {
     0% {
         transform: translateX(0);
     }
-
+    
     100% {
         transform: translateX(-50%);
     }
